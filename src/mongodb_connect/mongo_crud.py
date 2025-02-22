@@ -71,3 +71,4 @@ class mongo_operation:
         datajson=json.loads(dataframe.to_json(orient='record'))
         collection=self.create_collection()
         collection.insert_many(datajson)
+        
