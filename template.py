@@ -1,46 +1,35 @@
 import os
 from pathlib import Path
 
+package_name = 'mongodb_connect'
 
 list_of_files = [
-    ".github/workflows/.gitkeep",
+    ".github/workflows/ci.yaml",
 
 
 #Source [ src/ ]
     "src/__init__.py",
-    
-    #Components
-    "src/components/__init__.py",
-    "src/components/data_ingestion.py",
-    "src/components/data_transformation.py",
-    "src/components/model_trainer.py",
-    "src/components/Model_evaluation.py",
-
-    #Pipleines
-    "src/pipeline/__init__.py",
-    'src/pipeline/training_pipleline.py',
-    "src/pipeline/prediction_pipeline.py",
-
-    #
-    "src/utils/__init__.py",
-    "src/utils/utils.py",
-    "src/logger/logging.py",
-    "src/expection/exception.py",
-
+    f"src/{package_name}/__init__.py",
+    f"src/{package_name}/mongo_crud.py"
 
 #Testing 
+    "tests/__init__.py",
     "tests/unit/__init__.py",
-    "tests/integration/__init__.py",
+    "tests/unit/unit.py",
+    "tests/integration/__init__.py",    
+    "tests/integration/int.py",
 
 #Other
-    "experiment/experiments.ipynb",
+
     "init_setup.sh",
     "requirements.txt",
     "requirements_dev.txt",
+    
     "setup.cfg",
     "setup.py",
     "pyproject.toml",
     "tox.ini",
+    "experiment/experiments.ipynb",
 ]
 
 
