@@ -10,7 +10,7 @@ list_of_files = [
 #Source [ src/ ]
     "src/__init__.py",
     f"src/{package_name}/__init__.py",
-    f"src/{package_name}/mongo_crud.py"
+    f"src/{package_name}/mongo_crud.py",
 
 #Testing 
     "tests/__init__.py",
