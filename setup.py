@@ -11,6 +11,8 @@ REPO_NAME = "MnogoDB-Package"
 PKG_NAME= "MongoDB-Connect"
 AUTHOR_USER_NAME = "PetarS96"
 AUTHOR_EMAIL = "petarsimic1@hotmail.com"
+HYPEN_E_DOT = "-e ."
+
 
 def get_requirement(file_path: str) -> List[str]:
     requirements = []
