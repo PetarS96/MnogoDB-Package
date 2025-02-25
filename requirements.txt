@@ -1,7 +1,9 @@
-# requirements.txt
 pymongo
 pymongo[srv]
 dnspython
 pandas
 numpy
 ensure
+pytest
+
+-e .

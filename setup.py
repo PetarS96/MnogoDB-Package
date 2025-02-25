@@ -1,10 +1,9 @@
 from setuptools import setup, find_packages
 from typing import List
-'''
+
 with open('README.md', 'r', encoding='utf-8') as f:
-    long_description = f.read()     '''
+    long_description = f.read()     
    
-long_description= ' Looooooooooooooooooong description'
 
 __version__ = "0.0.4"
 REPO_NAME = "MnogoDB-Package"
@@ -12,17 +11,6 @@ PKG_NAME= "MongoDB-Connect"
 AUTHOR_USER_NAME = "PetarS96"
 AUTHOR_EMAIL = "petarsimic1@hotmail.com"
 HYPEN_E_DOT = "-e ."
-
-
-def get_requirement(file_path: str) -> List[str]:
-    requirements = []
-    with open(file_path) as f:
-        requirements = f.readlines()
-    requirements = [req.replace("\n", "") for req in requirements]
-
-    if HYPEN_E_DOT in requirements:
-        requirements.remove(HYPEN_E_DOT)
-    return requirements
 
 
 setup(
@@ -39,7 +27,6 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires= get_requirement("requirements.txt")
     )
 
 
